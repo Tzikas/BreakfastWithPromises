@@ -13,9 +13,19 @@ function addFood(step, id, callback){
         console.log(step);
         document.querySelector(id).innerHTML += (`<li>${step}</li`)
         resolve(step)
-        callback ? callback() : '' //For iteration one
+        callback ? callback() : ''//For iteration one  //addImage(id) => function to display food image once instructions finished printing
       }, Math.floor(Math.random() * 1000));
     })
   }
   /*****^ DO NOT TOUCH *****/
-    
+
+  
+// function addImage(id){
+//   if (id==='#mashPotatoes'){
+//     document.querySelector('#table').innerHTML+=`<img src="/images/mashPotatoes.jpg"/>`
+//   } else if (id==='#brusselSprouts'){
+//     return document.querySelector('#table').innerHTML+=`<img src="/images/brusselSprouts.jpg"/>`
+//   } else {
+//     return ''
+//   }
+// }
