@@ -42,16 +42,47 @@ const mashPotatoes = [
 //Iteration 1 using callbacks -- Try to streamline with recursion 
 addFood(steak[0], '#steak', function(){
   addFood(steak[1], '#steak', function(){
+    addFood(steak[2], '#steak', function(){
+      addFood(steak[3], '#steak', function(){
+        addFood(steak[4], '#steak', function(){
+          addFood(steak[5], '#steak', function(){
+            addFood(steak[6], '#steak', function(){
+              addFood(steak[7], '#steak', function(){
 
+              })
+            })
+          })
+        })
+      })
+    })
   })
 })
 
 
-//Iteration 2 using then -- Try to streamline with recursion
+// Iteration 2 using then -- Try to streamline with recursion
 addFood(mashPotatoes[0], '#mashPotatoes').then(res => {
   addFood(mashPotatoes[1], '#mashPotatoes').then(res => {
-    
-  })
+    addFood(mashPotatoes[2], '#mashPotatoes').then(res => {
+      addFood(mashPotatoes[3], '#mashPotatoes').then(res => {
+        addFood(mashPotatoes[4], '#mashPotatoes').then(res => {
+        }) 
+      }) 
+    }) 
+  }) 
 })
 
+//Iteration 3 
 
+async function printAllWithAsync(){
+  await addFood(brusselSprouts[0], '#brusselSprouts');
+  await addFood(brusselSprouts[1], '#brusselSprouts');
+  await addFood(brusselSprouts[2], '#brusselSprouts');
+  await addFood(brusselSprouts[3], '#brusselSprouts');
+  await addFood(brusselSprouts[4], '#brusselSprouts');
+  await addFood(brusselSprouts[5], '#brusselSprouts');
+  await addFood(brusselSprouts[6], '#brusselSprouts');
+  await addFood(brusselSprouts[7], '#brusselSprouts');
+  await addFood(brusselSprouts[8], '#brusselSprouts');
+}
+
+printAllWithAsync();

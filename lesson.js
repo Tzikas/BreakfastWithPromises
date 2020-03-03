@@ -10,7 +10,7 @@ function printString(str){
     printString("C");
   }
   
-//printAll();
+printAll();
   
 
 // You will notice that A, B, and C print in a different and random order each time you call printAll!
